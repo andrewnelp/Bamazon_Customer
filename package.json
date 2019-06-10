@@ -1,0 +1,23 @@
+{
+  "name": "bamazon_customer",
+  "version": "1.0.0",
+  "description": "App using mysql and node js db with the possibility to buy a product",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewnelp/Bamazon_Customer.git"
+  },
+  "author": "Andrey Nelepov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewnelp/Bamazon_Customer/issues"
+  },
+  "homepage": "https://github.com/andrewnelp/Bamazon_Customer#readme",
+  "dependencies": {
+    "inquirer": "^6.3.1",
+    "mysql": "^2.17.1"
+  }
+}
