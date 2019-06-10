@@ -19,18 +19,18 @@ connection.connect(err => {
   console.log(`connected as id ${connection.threadId}`);
   // run the start function after the connection is made to prompt the user
   displayProducts();
-  connection.end();
+  // connection.end();
 });
 
 
 const displayProducts = () => {
-  connection.query("SELECT item_id, product_name, department_name, price FROM products", (err, res) => {
+  connection.query("SELECT * FROM products", (err, res) => {
     if (err) throw err;
     console.log('=============================');
     console.log(`List of available products:`);
     console.log('=============================');
     res.forEach(r => {
-      console.log(`ID: ${r.item_id} || Name:${r.product_name} || Category: ${r.department_name} || Price: ${r.price} `);
+      console.log(`ID: ${r.item_id} || Name:${r.product_name} || Category: ${r.department_name} || Price: ${r.price} || Quantity ${r.stock_quantity} `);
     })
     console.log('=============================');
     // buyProducts(res);
@@ -80,13 +80,12 @@ const displayProducts = () => {
             (err, res) => {
               if (err) throw err;
               // console.log(res.affectedRows + " product quantity updated!\n");
-              // connection.end();
             }
+            
           );
         } else {
           console.log('=============================\n')
-          console.log("Insufficient quantity!")
-          // connection.end();
+          console.log("Insufficient quantity!");
         };
         // when a customer purchases anything from the store, 
         //the price of the product multiplied by the quantity purchased is added to the product's product_sales column.
@@ -102,6 +101,7 @@ const displayProducts = () => {
           (err, res) => {
             if (err) throw err;
             // console.log(res.affectedRows + " product sales updated!\n");
+            connection.end();
           })
       });
   });
