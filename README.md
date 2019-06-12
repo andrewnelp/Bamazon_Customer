@@ -23,3 +23,12 @@ NPM packages installed:
 * If the store does have enough of the product, it fulfills the customer's order.
    * This means updating the SQL database to reflect the remaining quantity.
    * Once the update goes through, the app shows the customer the total cost of their purchase.
+
+
+## Authors
+
+* **Andrey Nelepov** - *all the work* - [andrewnelp](https://github.com/andrewnelp)
+
+## License
+
+This project is licensed under the ISC License
