@@ -1,7 +1,8 @@
 # Bamazon_Customer
 An Amazon-like storefront with the MySQL
+Make sure to install npm packages **mysql** and **inquirer** beofore running
 
-** How it works video: 
+** How it works video: ** 
 
 * Database is preopulated  with around 10 different products. 
 
