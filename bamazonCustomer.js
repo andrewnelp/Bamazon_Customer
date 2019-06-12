@@ -100,7 +100,6 @@ const displayProducts = () => {
           ],
           (err, res) => {
             if (err) throw err;
-            // console.log(res.affectedRows + " product sales updated!\n");
             connection.end();
           })
       });
