@@ -5,7 +5,7 @@ NPM packages installed:
 * msql
 * inquirer 
 
-** How it works video:** 
+** How it works video:** https://youtu.be/GXHQueqBkMw
 
 * Database is preopulated  with around 10 different products. 
 
