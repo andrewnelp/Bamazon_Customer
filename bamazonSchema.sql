@@ -13,6 +13,7 @@ CREATE TABLE products
   (100) NOT NULL,
   price INT default 0,
   stock_quantity INT default 0,
+  product_sales INT default 0,
   PRIMARY KEY
   (item_id)
 );
